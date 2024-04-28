@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Montserrat_Bold;
+    src: url(font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_Semi;
+    src: url(font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_Reg;
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_Light;
+    src: url(font/Montserrat-Light.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Montserrat_Reg;
+}
+
+
+.su_button {
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-align: center;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 15px;
+    font-family: Montserrat_Reg;
+    border-radius: 36pt;
+}
+
+.su_button:hover {
+    background-color: #0778B8;
+    color: white;
+}
+
+.name_field, .email_field, .password_field {
+    font-family: Montserrat_Reg;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.signup_but{
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: Montserrat_Reg;
+    border-radius: 36pt;
+    width: 100%;
+}
+
+.signup_but:hover{
+    background-color: #0778B8;
+    color: white;
+}
+
+.back_but{
+    border: none;
+    color: white;
+    background-color: rgb(207, 207, 207);
+    cursor: pointer;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-family: Montserrat_Reg;
+    border-radius: 36pt;
+}
+
+.back_but:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.siup_container {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.siup_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form_logo{
+    display: flex;
+    max-width: 150px;
+}
+
+.form_text{
+    padding-bottom: 2%;
+}
+
+.form_text > h1{
+    font-family: Montserrat_Semi;
+}
+
+.siup_content {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_links{
+    display: flex;
+    flex-direction: row;
+    padding-top: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 6%;
+}
+
+.right_link {
+    margin-left: auto;
+}
+
+.siup_imgs{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+}
+
+.top_img{
+    display: flex;
+    width: 80%;
+    height: auto;
+    box-shadow: 70px -25px 0px #cd6b8c;
+    margin-bottom: 3px;
+}
+
+.bottom_img{
+    display: flex;
+    width: 80%;
+    height: auto;
+    box-shadow: -40px 50px 0px rgb(104, 177, 206);
+    margin-top: 3px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .siup_imgs{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .siup_content{
+        flex-direction: column-reverse;
+    }
+
+    .bottom_img, .top_img{
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .bottom_img {
+        box-shadow: -40px 20px 0px rgb(104, 177, 206);
+    }
+
+    .top_img {
+        box-shadow: 70px -20px 0px #cd6b8c;
+    }
+}
+
+@media (max-width: 539px) {
+    .siup_imgs {
+        flex-direction: column
+    }
+
+    .bottom_img, .top_img{
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .bottom_img {
+        box-shadow: -40px 20px 0px rgb(104, 177, 206);
+    }
+
+    .top_img {
+        box-shadow: 50px -20px 0px #cd6b8c;
+    }
+}
+
+@media (max-width: 375px) {
+    .bottom_img {
+        box-shadow: -30px 20px 0px rgb(104, 177, 206);
+    }
+
+    .top_img {
+        box-shadow: 30px -20px 0px #cd6b8c;
+    }
+}
+
+@media (max-width: 450px){
+
+    .top_img, .bottom_img{
+        display: none !important;
+    }
+}
